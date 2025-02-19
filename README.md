@@ -27,3 +27,13 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+A good invariant for my implementation of `fib()` is a check that the previous two elements are  
+members of the Fibonacci sequence. Since the first two (0 and 1) are known, the next number that is  
+calculated would be a member of the Fibonacci sequence. Since we now know that the first three elements  
+are members of the sequence, we can also ensure that the next calculated member will be part of  
+the sequence. Since we can guarantee that each calculated member will be part of the sequence,  
+we know that the algorithm will be correct at each recursive call.  
+
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
